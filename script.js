@@ -1,18 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let radioButtons = document.querySelectorAll('input[name="windowCleaning"]');
-
-    radioButtons.forEach(radio => {
-        radio.addEventListener("click", function () {
-            if (this.checked && this.previousState) {
-                this.checked = false;
-                this.previousState = false;
-            } else {
-                this.previousState = true;
-            }
-        });
-    });
-});
-
 function calculateQuote() {
     let homeSize = document.getElementById("homeSize").value;
     let windowOutside = document.getElementById("windowOutside").checked;
